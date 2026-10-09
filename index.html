@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>60thieves – Jeans made in small batches</title>
+<meta name="description" content="60thieves is a jeans manufacturing brand. Straight, slim and relaxed fits, cut and stitched in small batches.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --indigo:#1c2b4a; --ink:#101827; --chalk:#e9eef4; --thread:#c9843f; --wash:#8ea3bf; --white:#fbfcfd;
+  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--chalk);line-height:1.6;font-size:1.05rem}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--thread);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+
+header{background:var(--indigo);color:var(--white)}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.logo{font-family:var(--display);font-weight:800;font-size:1.4rem;letter-spacing:.04em;text-decoration:none}
+.nav a.link{margin-left:1.25rem;text-decoration:none;opacity:.85}
+.nav a.link:hover{opacity:1;text-decoration:underline}
+
+.hero{padding:4rem 0 5rem}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(4.5rem,18vw,11rem);line-height:.88;letter-spacing:-.01em}
+.stitch{border-top:3px dashed var(--thread);margin:1.5rem 0;max-width:34rem}
+.hero p{max-width:32rem;font-size:1.25rem;color:#d3dcea}
+.btn{display:inline-block;margin-top:1.75rem;padding:.85rem 1.6rem;background:var(--thread);color:var(--ink);font-weight:500;text-decoration:none;border-radius:2px}
+.btn:hover{background:#dd9a55}
+
+section{padding:4rem 0}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5vw,3rem);line-height:1.05;margin-bottom:1rem}
+.about{display:grid;gap:2rem;grid-template-columns:1fr 1fr}
+.about p{max-width:36rem}
+
+.fits{background:var(--indigo);color:var(--white)}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:1.5rem}
+.fit{border:2px dashed var(--thread);padding:1.5rem}
+.fit h3{font-family:var(--display);font-weight:600;font-size:1.6rem}
+.fit p{color:#d3dcea;margin-top:.4rem}
+
+.facts{display:grid;gap:1.5rem;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:1.5rem}
+.facts div{border-left:4px solid var(--indigo);padding-left:1rem}
+.facts strong{display:block;font-family:var(--display);font-size:1.4rem}
+
+.contact{background:var(--wash)}
+.contact p{max-width:34rem;margin-bottom:.5rem}
+.contact .btn{background:var(--indigo);color:var(--white)}
+.contact .btn:hover{background:var(--ink)}
+footer{background:var(--ink);color:#aab6c9;padding:1.5rem 0;font-size:.95rem}
+
+@media (max-width:700px){.about{grid-template-columns:1fr}.nav a.link{display:none}.hero{padding:3rem 0 3.5rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="nav">
+      <a class="logo" href="#top">60thieves</a>
+      <nav><a class="link" href="#fits">Fits</a><a class="link" href="#craft">How we make them</a><a class="link" href="#contact">Contact</a></nav>
+    </div>
+    <div class="hero" id="top">
+      <h1>60thieves</h1>
+      <div class="stitch"></div>
+      <p>Jeans cut and stitched in small batches. Tough fabric, honest fits, made to be worn for years.</p>
+      <a class="btn" href="#contact">Order or enquire</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap about">
+      <h2>Denim with nothing to hide</h2>
+      <p>60thieves is a jeans manufacturer. We make every pair ourselves, from pattern cutting to the last rivet, so we know exactly what goes into it. Buy from us as a customer, or work with us to produce your own label.</p>
+    </div>
+  </section>
+
+  <section class="fits" id="fits">
+    <div class="wrap">
+      <h2>Our fits</h2>
+      <div class="grid">
+        <div class="fit"><h3>Straight</h3><p>Classic leg, mid rise. The everyday pair.</p></div>
+        <div class="fit"><h3>Slim</h3><p>Closer through the thigh, tapered to the ankle.</p></div>
+        <div class="fit"><h3>Relaxed</h3><p>Roomy seat and leg for all-day comfort.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="craft">
+    <div class="wrap">
+      <h2>How we make them</h2>
+      <div class="facts">
+        <div><strong>Small batches</strong>Short runs mean we check every pair.</div>
+        <div><strong>Reinforced stitching</strong>Double-stitched seams and riveted stress points.</div>
+        <div><strong>Made to order</strong>Custom sizes and bulk orders welcome.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <h2>Get in touch</h2>
+      <p>Tell us the fit, size and quantity you need, and we'll reply with a quote.</p>
+      <p>Email: <a href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></p>
+      <a class="btn" href="https://wa.me/91XXXXXXXXXX?text=Hi%2060thieves%2C%20I%27d%20like%20to%20order%20jeans">Message on WhatsApp</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 60thieves. All rights reserved. Instagram: <a href="https://instagram.com/YOUR-HANDLE">@YOUR-HANDLE</a></div>
+</footer>
+
+</body>
+</html>
